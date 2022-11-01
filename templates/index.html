@@ -8,10 +8,17 @@
 
 <div class="content">
     <h1>Task Master</h1>
+    <form action="/" method="POST">
+        <div>
+            <label for="content">Content</label>
+            <input type="text" name="content" id="content">
+        </div>
 
+        <button>Add Task</button>
+    </form>
     {% if tasks | length < 1 %}
 
-        <h2>There are no tasks. Create one below!</h2>
+        <h2>There are no tasks. Create one above!</h2>
 
     {% else %}
 
@@ -37,18 +44,7 @@
         
     {% endif %}
 
-    <form action="/" method="POST">
-        <div>
-            <label for="add_a_task">Add a task</label>
-            <input type="text" name="add_a_task" id="add_a_task">
-        </div>
-        <div>
-            <label for="content">Content</label>
-            <input type="text" name="content" id="content">
-        </div>
 
-        <butto>Add Task</butto>
-    </form>
 </div>
 
 {% endblock %}

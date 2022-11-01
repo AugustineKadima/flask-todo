@@ -10,16 +10,13 @@
     <h1>Update Task</h1>
 
     <form action="/update/{{ task.id }}" method="POST">
-        <div>
-            <label for="add_a_task">Add a task</label>
-            <input type="text" name="add_a_task" id="add_a_task">
-        </div>
+     
         <div>
             <label for="content">Content</label>
             <input type="text" name="content" id="content" value="{{task.content}}">
         </div>
 
-        <butto>Add Task</butto>
+        <button>Update Task</button>
     </form>
 </div>
 
